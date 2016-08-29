@@ -5,7 +5,8 @@ var mongoose = require('mongoose'),
     Palabra = require('./models/palabra'),
     diccionario = require('./assets/diccionario.json');
 
-mongoose.connect('mongodb://localhost/taketzalis');
+mongoose.connect(process.env.Mongo_URI);
+console.log("Populating database");
 
 var i = 0;
 diccionario.map(function(word){
