@@ -11,7 +11,7 @@ app.use('/public',express.static(process.cwd()+'/public'));
 
 routes(app);
     
-mongoose.connect('mongodb://localhost/taketzalis');
+mongoose.connect(process.env.Mongo_URI);
 
 app.listen(PORT,function(){
     console.log('dancing on port: '+ PORT);
