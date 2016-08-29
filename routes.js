@@ -6,7 +6,7 @@ var _ = require('underscore'),
 module.exports = function(app){
     
     app.get('/',function(req,res){
-       res.sendfile(process.cwd()+'/index.html');
+       res.sendFile(process.cwd()+'/index.html');
     });
     
     app.get('/diccionario-NA',function(req,res){

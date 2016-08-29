@@ -10,6 +10,7 @@ app.use('/source',express.static(process.cwd()+'/source/build'));
 app.use('/public',express.static(process.cwd()+'/public'));
 
 routes(app);
+console.log("mongo URI: ", process.env.Mongo_URI);
     
 mongoose.connect(process.env.Mongo_URI);
 
