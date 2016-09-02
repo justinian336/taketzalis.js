@@ -27,10 +27,7 @@ var ExplanationsCard = React.createClass({
         return (
                 <Theme muiTheme={getMuiTheme(baseTheme)}>
                     <div>
-                        <AppBar title="Taketzalis.js" showMenuIconButton={false} iconElementRight={<IconButton
-                              iconClassName="face" tooltip="Taketzalis.js en Github!"
-                              tooltipPosition="bottom-left"
-                            />}></AppBar>
+                        <AppBar title="Taketzalis.js"></AppBar>
                         <Card>
                             <CardText>
                                 {
