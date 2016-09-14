@@ -45,11 +45,11 @@ var ExplanationsCard = React.createClass({
                                                     <div>
                                                         <p>
                                                             <Badge content={frase.texto.metodo} primary={true}>
-                                                                <span dangerouslySetInnerHTML={{markdownRuta}}/>
+                                                                <span dangerouslySetInnerHTML={{__html:markdownRuta}}/>
                                                             </Badge>
                                                         </p> 
                                                         <p>
-                                                        <span dangerouslySetInnerHTML={{markdownExp}}/>
+                                                        <span dangerouslySetInnerHTML={{__html:markdownExp}}/>
                                                         </p>
                                                     </div>
                                                 );
@@ -59,8 +59,8 @@ var ExplanationsCard = React.createClass({
                                                 var markdownExp = md.render(frase.texto.explicacion);
                                                 return(
                                                     <dl key={i}>
-                                                        <dt><span dangerouslySetInnerHTML={{markdownPar}}/></dt>
-                                                        <dd><span dangerouslySetInnerHTML={{markdownExp}}/></dd>
+                                                        <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
+                                                        <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
                                                     </dl>
                                                 );
                                             break;
