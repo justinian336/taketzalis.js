@@ -1,53 +1,91 @@
 [
     {
+        "tipo":"parrafo",
         "texto": "Taketzalis.js es un API RESTful que provee acceso al diccionario náhuat-español contenido en el libro [**Timumachtikan!**](http://tushik.org/wp-content/uploads/timumachtikan-pdf-texto.pdf), por *Alan R. King*."
     },
     {
+        "tipo":"parrafo",
         "texto":"La intención es colaborar con la difusión de la lengua náhuat, al proveer a desarrolladores web el fácil acceso a una valiosa base de datos que permita la creación de aplicaciones para el parendizaje de la lengua pipil"
     },
     {
+        "tipo":"parrafo",
         "texto":"El API ofrece dos endpoints:"
     },
     {
-        "texto":"1. **/diccionario-NA**: retorna un objeto JSON conteniendo los 468 términos en lengua náhuat en la base de datos, junto con las siguientes propiedades:"
+        "tipo":"ruta",
+        "texto":{
+            "metodo":"GET",
+            "ruta":"`/diccionario-NA`",
+            "explicacion":"retorna un objeto JSON conteniendo los 468 términos en lengua náhuat en la base de datos, junto con las siguientes propiedades:"
+        }
     },
     {
-        "texto":"* **palabra**: el término en náhuat."
+        "tipo":"respuesta",
+        "texto":{
+            "parametro":"palabra",
+            "explicacion":"el término en náhuat."
+        }
     },
     {
-        "texto":"* **tg**: variable booleana que indica si la palabra se encuentra en el segmento de *Tablas Gramaticales* del libro **Timumachtikan!**"
+        "tipo":"respuesta",
+        "texto":{
+            "parametro":"tg",
+            "explicacion":"variable booleana que indica si la palabra se encuentra en el segmento de *Tablas Gramaticales* del libro **Timumachtikan!**"
+        }
     },
     {
-        "texto":"* **significados**: un arreglo que lista los significados en español."
+        "tipo":"respuesta",
+        "texto":{
+            "parametro":"significados",
+            "explicacion":"un arreglo que lista los significados en español."
+        }
     },
     {
-        "texto":"* **lecciones**: cada significado contiene un arreglo que lista el número del capítulo y la parte correspondiente donde puede encontrarse una explicación del término en el libro de texto."
+        "tipo":"respuesta",
+        "texto":{
+            "parametro":"lecciones",
+            "explicacion":"cada significado contiene un arreglo que lista el número del capítulo y la parte correspondiente donde puede encontrarse una explicación del término en el libro de texto."
+        }
     },
     {
-        "texto":"2. **/diccionario-ES**: permite la búsqueda de términos en español con su respectivo significado en náhuat."
+        "tipo":"ruta",
+        "texto":{
+            "metodo":"GET",
+            "ruta":"`/diccionario-ES`",
+            "explicacion":"permite la búsqueda de términos en español con su respectivo significado en náhuat."
+        }
     },
     {
+        "tipo":"parrafo",
         "texto":"Ambos endpoints permiten el uso de los siguientes parámetros de búsqueda:"
     },
     {
+        "tipo":"parrafo",
         "texto":"- **palabra**: retorna un listado de todos los términos que contienen la palabra indicada."
     },
     {
+        "tipo":"parrafo",
         "texto":"- **exacto**: retorna sólamente los términos que coinciden exactamente con el texto en el parámetro **palabra**."
     },
     {
+        "tipo":"parrafo",
         "texto":"Por ejemplo, la siguiente llamada retorna resultados para los términos **taketzalis** y **nawataketzalis**, ya que el parámetro *exacto* no fue incluido:"
     },
     {
-        "texto":"[/diccionario-NA?palabra=taketzalis](/diccionario-NA?palabra=taketzalis)"
+        "tipo":"ejemplo",
+        "texto":"[/diccionario-NA?palabra=taketzalis](/diccionario-NA?palabra=taketzalis)",
+        "respuesta":""
     },
     {
+        "tipo":"parrafo",
         "texto":"La siguiente llamada sólamente incluye el resultado para el término **taketzalis**:"
     },
     {
-        "texto":"[/diccionario-NA?palabra=taketzalis&exacto=verdadero](/diccionario-NA?palabra=taketzalis&exacto=verdadero)"
+        "tipo":"ejemplo",
+        "texto":"[/diccionario-NA?palabra=taketzalis&exacto=verdadero](/diccionario-NA?palabra=taketzalis&exacto=verdadero)",
     },
     {
+        "tipo":"parrafo",
         "texto":"El API es código abierto y está disponible en el repositorio de [Github](). Si crees que hay algo que se deba mejorar, crea un issue y siéntete libre de hacer un pull request con tu código."
     }
 ]
