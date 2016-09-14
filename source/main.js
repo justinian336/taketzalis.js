@@ -79,7 +79,7 @@ var ExplanationsCard = React.createClass({
                                         
                                     },this)
                                 }
-                                <IconButton iconClassName="muidocs-icon-custom-github" />
+                                <div className="text-center"><a href="https://github.com/justinian336/taketzalis.js"><i className="fa fa-github fa-5x" aria-hidden="true"></i></a></div>
                             </CardText>
                         </Card>
                     </div>
