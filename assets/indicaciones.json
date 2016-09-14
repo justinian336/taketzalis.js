@@ -60,12 +60,18 @@
         "texto":"Ambos endpoints permiten el uso de los siguientes parámetros de búsqueda:"
     },
     {
-        "tipo":"parrafo",
-        "texto":"- **palabra**: retorna un listado de todos los términos que contienen la palabra indicada."
+        "tipo":"parametro",
+        "texto":{
+            "parametro":"`palabra`",
+            "explicacion":"retorna un listado de todos los términos que contienen la palabra indicada."
+        }
     },
     {
-        "tipo":"parrafo",
-        "texto":"- **exacto**: retorna sólamente los términos que coinciden exactamente con el texto en el parámetro **palabra**."
+        "tipo":"parametro",
+        "texto":{
+            "parametro":"`exacto`",
+            "explicacion":"retorna solamente los términos que coinciden exactamente con el texto en el parámetro `palabra`."
+        }
     },
     {
         "tipo":"parrafo",

@@ -12,7 +12,6 @@ var Card = require('material-ui/Card/Card').default,
     CardText = require('material-ui/Card/CardText').default,
     CardActions = require('material-ui/Card/CardActions').default,
     IconButton = require('material-ui/IconButton').default,
-    Badge = require('material-ui/Badge').default,
     Remarkable = require('remarkable'),
     indicaciones = require('../assets/indicaciones.json');
     
@@ -44,26 +43,34 @@ var ExplanationsCard = React.createClass({
                                                 return(
                                                     <div>
                                                         <p>
-                                                            <Badge content={frase.texto.metodo} primary={true}>
-                                                                <span dangerouslySetInnerHTML={{__html:markdownRuta}}/>
-                                                            </Badge>
+                                                            {frase.texto.metodo}+": "<span dangerouslySetInnerHTML={{__html:markdownRuta}}/>
                                                         </p> 
                                                         <p>
                                                         <span dangerouslySetInnerHTML={{__html:markdownExp}}/>
                                                         </p>
                                                     </div>
                                                 );
-                                            break;
+                                                break;
                                             case "respuesta":
                                                 var markdownPar = md.render(frase.texto.parametro);
                                                 var markdownExp = md.render(frase.texto.explicacion);
                                                 return(
-                                                    <dl key={i}>
+                                                    <dl key={i} className="dl-horizontal">
                                                         <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
                                                         <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
                                                     </dl>
                                                 );
-                                            break;
+                                                break;
+                                            case "parametro":
+                                                var markdownPar = md.render(frase.texto.parametro);
+                                                var markdownExp = md.render(frase.texto.explicacion);
+                                                return(
+                                                    <dl key={i} className="dl-horizontal">
+                                                        <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
+                                                        <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
+                                                    </dl>
+                                                );
+                                                break;
                                             default:
                                                 var markdownP = md.render(frase.texto);
                                                 return(<p key={i}><span dangerouslySetInnerHTML={{__html:markdownP}}/></p>);
