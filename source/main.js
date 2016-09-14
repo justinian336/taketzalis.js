@@ -12,6 +12,7 @@ var Card = require('material-ui/Card/Card').default,
     CardText = require('material-ui/Card/CardText').default,
     CardActions = require('material-ui/Card/CardActions').default,
     IconButton = require('material-ui/IconButton').default,
+    Paper = require('material-ui/Paper').default,
     Remarkable = require('remarkable'),
     indicaciones = require('../assets/indicaciones.json');
     
@@ -55,20 +56,24 @@ var ExplanationsCard = React.createClass({
                                                 var markdownPar = md.render(frase.texto.parametro);
                                                 var markdownExp = md.render(frase.texto.explicacion);
                                                 return(
-                                                    <dl key={i} className="dl-horizontal">
-                                                        <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
-                                                        <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
-                                                    </dl>
+                                                    <Paper zDepth={2}>
+                                                        <dl key={i} className="dl-horizontal">
+                                                            <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
+                                                            <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
+                                                        </dl>
+                                                    </Paper>
                                                 );
                                                 break;
                                             case "parametro":
                                                 var markdownPar = md.render(frase.texto.parametro);
                                                 var markdownExp = md.render(frase.texto.explicacion);
                                                 return(
-                                                    <dl key={i} className="dl-horizontal">
-                                                        <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
-                                                        <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
-                                                    </dl>
+                                                    <Paper zDepth={2}>
+                                                        <dl key={i} className="dl-horizontal">
+                                                            <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
+                                                            <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
+                                                        </dl>
+                                                    </Paper>
                                                 );
                                                 break;
                                             default:
