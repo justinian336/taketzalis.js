@@ -43,7 +43,7 @@ var ExplanationsCard = React.createClass({
                                                 return(
                                                     <div>
                                                         <p>
-                                                            {frase.texto.metodo}+": "<span dangerouslySetInnerHTML={{__html:markdownRuta}}/>
+                                                            <strong>{frase.texto.metodo}:</strong> <span dangerouslySetInnerHTML={{__html:markdownRuta}}/>
                                                         </p> 
                                                         <p>
                                                         <span dangerouslySetInnerHTML={{__html:markdownExp}}/>
