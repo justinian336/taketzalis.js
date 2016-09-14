@@ -5,7 +5,7 @@
     },
     {
         "tipo":"parrafo",
-        "texto":"La intención es colaborar con la difusión de la lengua náhuat, al proveer a desarrolladores web el fácil acceso a una valiosa base de datos que permita la creación de aplicaciones para el parendizaje de la lengua pipil"
+        "texto":"La intención es colaborar con la difusión de la lengua náhuat, al proveer a desarrolladores web el fácil acceso a una valiosa base de datos que permita la creación de aplicaciones para el parendizaje de la lengua pipil."
     },
     {
         "tipo":"parrafo",
@@ -16,35 +16,35 @@
         "texto":{
             "metodo":"GET",
             "ruta":"`/diccionario-NA`",
-            "explicacion":"retorna un objeto JSON conteniendo los 468 términos en lengua náhuat en la base de datos, junto con las siguientes propiedades:"
+            "explicacion":"Retorna un objeto JSON conteniendo los 468 términos en lengua náhuat en la base de datos, junto con las siguientes propiedades:"
         }
     },
     {
         "tipo":"respuesta",
         "texto":{
             "parametro":"palabra",
-            "explicacion":"el término en náhuat."
+            "explicacion":"El término en náhuat."
         }
     },
     {
         "tipo":"respuesta",
         "texto":{
             "parametro":"tg",
-            "explicacion":"variable booleana que indica si la palabra se encuentra en el segmento de *Tablas Gramaticales* del libro **Timumachtikan!**"
+            "explicacion":"Variable booleana que indica si la palabra se encuentra en el segmento de *Tablas Gramaticales* del libro **Timumachtikan!**"
         }
     },
     {
         "tipo":"respuesta",
         "texto":{
             "parametro":"significados",
-            "explicacion":"un arreglo que lista los significados en español."
+            "explicacion":"Un arreglo que lista los significados en español."
         }
     },
     {
         "tipo":"respuesta",
         "texto":{
             "parametro":"lecciones",
-            "explicacion":"cada significado contiene un arreglo que lista el número del capítulo y la parte correspondiente donde puede encontrarse una explicación del término en el libro de texto."
+            "explicacion":"Cada significado contiene un arreglo que lista el número del capítulo y la parte correspondiente donde puede encontrarse una explicación del término en el libro de texto."
         }
     },
     {
@@ -52,7 +52,7 @@
         "texto":{
             "metodo":"GET",
             "ruta":"`/diccionario-ES`",
-            "explicacion":"permite la búsqueda de términos en español con su respectivo significado en náhuat."
+            "explicacion":"Permite la búsqueda de términos en español con su respectivo significado en náhuat."
         }
     },
     {
@@ -63,14 +63,14 @@
         "tipo":"parametro",
         "texto":{
             "parametro":"palabra",
-            "explicacion":"retorna un listado de todos los términos que contienen la palabra indicada."
+            "explicacion":"Retorna un listado de todos los términos que contienen la palabra indicada."
         }
     },
     {
         "tipo":"parametro",
         "texto":{
             "parametro":"exacto",
-            "explicacion":"retorna solamente los términos que coinciden exactamente con el texto en el parámetro `palabra`."
+            "explicacion":"Retorna solamente los términos que coinciden exactamente con el texto en el parámetro `palabra`."
         }
     },
     {
@@ -92,6 +92,6 @@
     },
     {
         "tipo":"parrafo",
-        "texto":"El API es código abierto y está disponible en el repositorio de [Github](). Si crees que hay algo que se deba mejorar, crea un issue y siéntete libre de hacer un pull request con tu código."
+        "texto":"El API es código abierto y está disponible en el repositorio de [Github](https://github.com/justinian336/taketzalis.js). Si crees que hay algo que se deba mejorar, crea un issue y siéntete libre de hacer un pull request con tu código."
     }
 ]
