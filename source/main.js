@@ -52,44 +52,24 @@ var ExplanationsCard = React.createClass({
                                                     </div>
                                                 );
                                                 break;
-                                            case "respuestas":
+                                            case "respuesta":
+                                                var markdownPar = md.render(frase.texto.parametro);
+                                                var markdownExp = md.render(frase.texto.explicacion);
                                                 return(
-                                                    <Paper zDepth={2}>
-                                                        <dl key={i} className="dl-horizontal">
-                                                            {
-                                                                frase.texto.map(function(respuesta){
-                                                                    var markdownPar = md.render(respuesta.parametro);
-                                                                    var markdownExp = md.render(respuesta.explicacion);
-                                                                    return(
-                                                                        <div>
-                                                                            <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
-                                                                            <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>           
-                                                                        </div>
-                                                                    )
-                                                                },this)
-                                                            }
-                                                        </dl>
-                                                    </Paper>
+                                                    <dl key={i} className="dl-horizontal">
+                                                        <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
+                                                        <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
+                                                    </dl>
                                                 );
                                                 break;
-                                            case "parametros":
+                                            case "parametro":
+                                                var markdownPar = md.render(frase.texto.parametro);
+                                                var markdownExp = md.render(frase.texto.explicacion);
                                                 return(
-                                                    <Paper zDepth={2}>
-                                                        <dl key={i} className="dl-horizontal">
-                                                            {
-                                                                frase.texto.map(function(parametro){
-                                                                    var markdownPar = md.render(parametro.parametro);
-                                                                    var markdownExp = md.render(parametro.explicacion);
-                                                                    return(
-                                                                        <div>
-                                                                            <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
-                                                                            <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>           
-                                                                        </div>
-                                                                    )
-                                                                },this)
-                                                            }
-                                                        </dl>
-                                                    </Paper>
+                                                    <dl key={i} className="dl-horizontal">
+                                                        <dt><span dangerouslySetInnerHTML={{__html:markdownPar}}/></dt>
+                                                        <dd><span dangerouslySetInnerHTML={{__html:markdownExp}}/></dd>
+                                                    </dl>
                                                 );
                                                 break;
                                             default:
