@@ -20,32 +20,25 @@
         }
     },
     {
-        "tipo":"respuesta",
-        "texto":{
-            "parametro":"palabra",
-            "explicacion":"el término en náhuat."
-        }
-    },
-    {
-        "tipo":"respuesta",
-        "texto":{
-            "parametro":"tg",
-            "explicacion":"variable booleana que indica si la palabra se encuentra en el segmento de *Tablas Gramaticales* del libro **Timumachtikan!**"
-        }
-    },
-    {
-        "tipo":"respuesta",
-        "texto":{
-            "parametro":"significados",
-            "explicacion":"un arreglo que lista los significados en español."
-        }
-    },
-    {
-        "tipo":"respuesta",
-        "texto":{
-            "parametro":"lecciones",
-            "explicacion":"cada significado contiene un arreglo que lista el número del capítulo y la parte correspondiente donde puede encontrarse una explicación del término en el libro de texto."
-        }
+        "tipo":"respuestas",
+        "texto":[
+            {
+                "parametro":"palabra",
+                "explicacion":"el término en náhuat."
+            },
+            {
+                "parametro":"tg",
+                "explicacion":"variable booleana que indica si la palabra se encuentra en el segmento de *Tablas Gramaticales* del libro **Timumachtikan!**"
+            },
+            {
+                "parametro":"significados",
+                "explicacion":"un arreglo que lista los significados en español."
+            },
+            {
+                "parametro":"lecciones",
+                "explicacion":"cada significado contiene un arreglo que lista el número del capítulo y la parte correspondiente donde puede encontrarse una explicación del término en el libro de texto."
+            }
+        ]
     },
     {
         "tipo":"ruta",
@@ -60,18 +53,17 @@
         "texto":"Ambos endpoints permiten el uso de los siguientes parámetros de búsqueda:"
     },
     {
-        "tipo":"parametro",
-        "texto":{
-            "parametro":"palabra",
-            "explicacion":"retorna un listado de todos los términos que contienen la palabra indicada."
-        }
-    },
-    {
-        "tipo":"parametro",
-        "texto":{
-            "parametro":"exacto",
-            "explicacion":"retorna solamente los términos que coinciden exactamente con el texto en el parámetro `palabra`."
-        }
+        "tipo":"parametros",
+        "texto":[
+            {
+                "parametro":"palabra",
+                "explicacion":"retorna un listado de todos los términos que contienen la palabra indicada."
+            },
+            {
+                "parametro":"exacto",
+                "explicacion":"retorna solamente los términos que coinciden exactamente con el texto en el parámetro `palabra`."
+            }
+        ]
     },
     {
         "tipo":"parrafo",
