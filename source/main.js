@@ -79,6 +79,7 @@ var ExplanationsCard = React.createClass({
                                         
                                     },this)
                                 }
+                                <IconButton iconClassName="muidocs-icon-custom-github" />
                             </CardText>
                         </Card>
                     </div>
