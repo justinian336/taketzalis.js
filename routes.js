@@ -15,7 +15,7 @@ module.exports = function(app){
             if(req.query.exacto==="verdadero"){
                 Palabras.findOne({palabra:req.query.palabra},{_id:0,__v:0},function(err,result){
                     if(err){throw(err)}
-                    res.json(result); 
+                    res.json([result]); 
                 });
             }
             else{
