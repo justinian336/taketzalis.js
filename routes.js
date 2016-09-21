@@ -3,7 +3,7 @@
 var _ = require('underscore'),
     Palabras = require('./models/palabra');
 
-module.exports = function(app){
+module.exports = function(app){ 
     
     app.get('/',function(req,res){
        res.sendFile(process.cwd()+'/index.html');
