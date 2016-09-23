@@ -3,6 +3,7 @@
 API que sirve un diccionario Español (salvadoreño)-Náhuat basado en el libro [**Timumachtikan!**](http://tushik.org/wp-content/uploads/timumachtikan-pdf-texto.pdf), por *Alan R. King*.
 
 Para poner a funcionar el API sigue los siguientes pasos:
+
 1. Clona este repositorio y posiciónate en el nuevo directorio.
 2. Ejecuta `npm install` para instalar las dependencias.
 3. Instala globalmente gulp.
