@@ -11,8 +11,9 @@ console.log("Populating database");
 Palabra.find({},function(err, data){
     if(err) throw err;
    if(data.length>0){
-       Palabra.delete({});
-       populate();
+       Palabra.find({}).remove(function(){
+          populate(); 
+       });
    } 
    else{
        populate();
