@@ -80,7 +80,7 @@ var ExplanationsCard = React.createClass({
                                         
                                     },this)
                                 }
-                                <div className="text-center"><a href="https://github.com/justinian336/taketzalis.js"><i className="fa fa-github fa-5x" aria-hidden="true"></i></a></div>
+                                <div className="text-center"><a href="https://github.com/justinian336/taketzalis.js" target="_blank"><i className="fa fa-github fa-5x" aria-hidden="true"></i></a></div>
                                 <h6 className="text-center">Juan Martínez 2016</h6>
                             </CardText>
                         </Card>
