@@ -16,7 +16,7 @@
         "texto":{
             "metodo":"GET",
             "ruta":"`/diccionario-NA`",
-            "explicacion":"Retorna un objeto JSON conteniendo los 468 términos en lengua náhuat en la base de datos, junto con las siguientes propiedades:"
+            "explicacion":"Retorna un objeto JSON conteniendo los 467 términos en lengua náhuat en la base de datos, junto con las siguientes propiedades:"
         }
     },
     {
